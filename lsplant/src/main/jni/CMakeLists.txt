@@ -22,6 +22,8 @@ add_subdirectory(external/dex_builder)
 
 option(LSPLANT_BUILD_SHARED "If ON, lsplant will also build shared library" ON)
 
+set(LSPLANT_BUILD_SHARED OFF)
+
 if (LSPLANT_BUILD_SHARED)
     message(STATUS "Building lsplant as a shared library")
     add_library(${PROJECT_NAME} SHARED ${SOURCES})
